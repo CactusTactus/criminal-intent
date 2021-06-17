@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name" translatable="false">CriminalIntent</string>
+    <string name="crime_title_hint">Enter a title for the crime.</string>
+    <string name="crime_title_label">Title</string>
+    <string name="crime_details_label">Details</string>
+    <string name="crime_solved_label">Solved</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="call_police">Police</string>
+    <string name="crime_is_solved">is solved</string>
+    <string name="new_crime">New Crime</string>
+    <string name="crime_suspect_text">Choose Suspect</string>
+    <string name="crime_report_text">Send Crime Report</string>
+    <string name="no_crimes">There is no crimes yet.</string>
+
+    <string name="crime_report">%1$s! The crime was discovered on %2$s. %3$s, and %4$s</string>
+    <string name="crime_report_solved">The case is solved</string>
+    <string name="crime_report_unsolved">The case is not solved</string>
+    <string name="crime_report_no_suspect">there is no suspect.</string>
+    <string name="crime_report_suspect">the suspect is %s.</string>
+    <string name="crime_report_subject">CriminalIntent Crime Report</string>
+    <string name="send_report">Send crime report via</string>
+
+    <string name="contact_permission_rationale">To dial a number, you must provide access to your contacts</string>
+    <string name="camera_and_storage_permission_rationale">To take a photo, you must provide access to your camera and storage</string>
+    <string name="contact_permission_request">Allow access to contacts</string>
+    <string name="camera_and_storage_permission_request">Allow access to camera and storage</string>
+    <string name="crime_photo">Crime photo</string>
+
+    <string name="camera_button_description">Take photo of crime scene</string>
+    <string name="crime_image_view_no_image_description">Crime scene photo (not set)</string>
+    <string name="crime_image_view_image_description">Crime scene photo (set)</string>
+</resources>

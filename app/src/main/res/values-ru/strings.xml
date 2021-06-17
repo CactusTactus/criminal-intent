@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">CriminalIntent</string>
+    <string name="crime_title_hint">Введите название преступления.</string>
+    <string name="crime_title_label">Название</string>
+    <string name="crime_details_label">Подробности</string>
+    <string name="crime_solved_label">Решено</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="call_police">Полиция</string>
+    <string name="crime_is_solved">улажено</string>
+    <string name="new_crime">Новое преступление</string>
+    <string name="crime_suspect_text">Выбрать подозреваемого</string>
+    <string name="crime_report_text">Отправить отчёт о преступлении</string>
+    <string name="no_crimes">Пока преступлений нет.</string>
+
+    <string name="crime_report">%1$s! Преступление было обнаружено %2$s. %3$s, и %4$s</string>
+    <string name="crime_report_solved">Ситуация улажена</string>
+    <string name="crime_report_unsolved">Ситуация не улажена</string>
+    <string name="crime_report_no_suspect">подозреваемые остутствуют.</string>
+    <string name="crime_report_suspect">подозреваемый - %s.</string>
+    <string name="crime_report_subject">CriminalIntent Отчёт о преступлении</string>
+    <string name="send_report">Отправить отчёт с помощью</string>
+
+    <string name="contact_permission_rationale">Чтобы добавить номер, Вы должны разрешить доступ к контактам</string>
+    <string name="camera_and_storage_permission_rationale">Чтобы добавить сделать фото, Вы должны разрешить доступ к камере и внутреннему хранилищу</string>
+    <string name="contact_permission_request">Разрешить доступ к контактам</string>
+    <string name="camera_and_storage_permission_request">Разрешить доступ к камере и внутреннему хранилищу</string>
+    <string name="crime_photo">Фото преступления</string>
+
+    <string name="camera_button_description">Сделать фото места преступления</string>
+    <string name="crime_image_view_no_image_description">Фото места преступления (отсутствует)</string>
+    <string name="crime_image_view_image_description">Фото места преступления (присутствует)</string>
+</resources>

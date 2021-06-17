@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/crime_image_view"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@android:color/darker_gray"
+            android:contentDescription="@string/crime_image_view_no_image_description"
+            app:layout_constraintEnd_toStartOf="@id/camera_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/camera_button"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="@dimen/margin_small"
+            android:contentDescription="@string/camera_button_description"
+            android:insetLeft="@dimen/no_inset"
+            android:insetTop="@dimen/no_inset"
+            android:insetRight="@dimen/no_inset"
+            android:insetBottom="@dimen/no_inset"
+            app:icon="@drawable/ic_camera"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/crime_image_view"
+            app:layout_constraintEnd_toStartOf="@id/title_label_text_view"
+            app:layout_constraintStart_toEndOf="@id/crime_image_view"
+            app:layout_constraintTop_toTopOf="@id/crime_image_view" />
+
+        <TextView
+            android:id="@+id/title_label_text_view"
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:text="@string/crime_title_label"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/camera_button"
+            app:layout_constraintTop_toTopOf="@id/crime_image_view" />
+
+        <EditText
+            android:id="@+id/crime_title_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/crime_title_hint"
+            android:importantForAutofill="no"
+            android:inputType="textCapSentences"
+            app:layout_constraintEnd_toEndOf="@id/title_label_text_view"
+            app:layout_constraintStart_toStartOf="@id/title_label_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/title_label_text_view" />
+
+        <TextView
+            android:id="@+id/details_label_text_view"
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:text="@string/crime_details_label"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/camera_button" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/crime_date_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            app:icon="@drawable/ic_calendar_today"
+            app:iconGravity="textStart"
+            app:layout_constraintEnd_toStartOf="@id/crime_time_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details_label_text_view"
+            tools:text="07.05.2021" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/crime_time_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:paddingHorizontal="0dp"
+            app:icon="@drawable/ic_access_time"
+            app:iconGravity="textStart"
+            app:layout_constraintEnd_toStartOf="@id/crime_solved_check_box"
+            app:layout_constraintStart_toEndOf="@id/crime_date_button"
+            app:layout_constraintTop_toTopOf="@+id/crime_date_button"
+            tools:text="16:20" />
+
+        <CheckBox
+            android:id="@+id/crime_solved_check_box"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:minHeight="48dp"
+            android:text="@string/crime_solved_label"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/crime_time_button"
+            app:layout_constraintTop_toTopOf="@+id/crime_time_button" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/crime_suspect_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/crime_suspect_text"
+            app:icon="@drawable/ic_contacts"
+            app:iconGravity="textStart"
+            app:layout_constraintEnd_toEndOf="@id/crime_time_button"
+            app:layout_constraintStart_toStartOf="@id/crime_date_button"
+            app:layout_constraintTop_toBottomOf="@+id/crime_date_button" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/crime_call_suspect_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:backgroundTint="@android:color/holo_green_light"
+            app:icon="@drawable/ic_call"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/crime_suspect_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/crime_time_button"
+            app:layout_constraintTop_toTopOf="@id/crime_suspect_button" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/crime_report_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            android:text="@string/crime_report_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/crime_suspect_button" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
